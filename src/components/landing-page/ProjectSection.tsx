@@ -8,7 +8,7 @@ const ProjectSection = () => {
   const handleClick = () => alert("let's Talk")
 
   return (
-    <section>
+    <section className='pb-[160px]'>
       <div className='max-w-[1120px] px-[22px] mx-auto'>
         <div className='flex flex-col gap-2.5'>
           <h2 className='font-bold text-[20px] sm:text-[24] md:text-[32px] text-white'>
@@ -19,7 +19,7 @@ const ProjectSection = () => {
           </p>
         </div>
         <div>
-          <div className='grid [grid-template-columns:repeat(auto-fit,minmax(518px,1fr))] gap-x-3.5 gap-y-8 py-8'>
+          <div className='grid [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))] md:[grid-template-columns:repeat(auto-fit,minmax(400px,1fr))] lg:[grid-template-columns:repeat(auto-fit,minmax(518px,1fr))] gap-x-3.5 gap-y-8 py-8'>
             <ProductCardList />
             <ProductCardList />
             <ProductCardList />
