@@ -4,7 +4,7 @@ import React from 'react'
 import ProductCardList from './project-section/ProjectCard'
 import { Button } from '../general/Button'
 
-const ProjectSection = () => {
+const ProjectSection: React.FC = () => {
   const handleClick = () => alert("let's Talk")
 
   return (

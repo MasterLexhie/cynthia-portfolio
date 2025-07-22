@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/general/Button'
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   const handleClick = () => alert("let's Talk")
   return (
     <section className='pt-[22px] sm:pt-6 md:pt-[74] pb-[19px] sm:pb-[47px] md:pb-[48px]'>

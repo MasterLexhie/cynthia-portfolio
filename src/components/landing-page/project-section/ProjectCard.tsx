@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import ProjectTag from './ProjectTag'
 
-const ProjectCard = () => {
+const ProjectCard: React.FC = () => {
   return (
     <div className='bg-[#1C1C1C] border border-[#242424] flex flex-col gap-6 rounded-3xl pt-2 pb-3 px-3.5'>
       <div className='rounded-[12px]'>
