@@ -24,6 +24,10 @@ const config: Config = {
           background1: 'var(--button-bg-1)',
           text1: 'var(--button-text-1)'
         }
+      },
+      fontFamily: {
+        'product-sans': ['Product Sans', 'sans-serif'],
+        manrope: ['Manrope', 'sans-serif']
       }
     }
   },

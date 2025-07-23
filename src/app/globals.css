@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&family=Manrope:wght@500;600&display=swap');
 @import 'tailwindcss';
 
 /* @layer base { */
@@ -21,7 +22,14 @@
 body {
   background: var(--global-bg-1);
   color: var(--global-text-2);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Product Sans', 'Manrope', sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /* @layer utilities { */
