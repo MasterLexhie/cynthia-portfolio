@@ -1,15 +1,16 @@
 'use client'
 
 import React from 'react'
-import ProductCardList from './project-section/ProjectCard'
+import ProductCard from './project-section/ProjectCard'
 import { Button } from '../general/Button'
+import { projectList } from '@/data/projects'
 
 const ProjectSection: React.FC = () => {
   const handleClick = () => alert("let's Talk")
 
   return (
     <section className='pb-[160px]'>
-      <div className='max-w-[1120px] px-[22px] mx-auto'>
+      <div className='max-w-[1120px] px-[22px] sm:px-[66px] mx-auto'>
         <div className='flex flex-col gap-2.5'>
           <h2 className='font-bold text-[20px] sm:text-[24] md:text-[32px] text-white'>
             Projects
@@ -19,21 +20,24 @@ const ProjectSection: React.FC = () => {
           </p>
         </div>
         <div>
-          <div className='grid [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))] md:[grid-template-columns:repeat(auto-fit,minmax(400px,1fr))] lg:[grid-template-columns:repeat(auto-fit,minmax(518px,1fr))] gap-x-3.5 gap-y-8 py-8'>
-            <ProductCardList />
-            <ProductCardList />
-            <ProductCardList />
+          <div className='grid md:[grid-template-columns:repeat(auto-fit,minmax(400px,1fr))] lg:[grid-template-columns:repeat(auto-fit,minmax(45%,1fr))] gap-x-3.5 gap-y-8 py-8'>
+            {projectList.map((project) => (
+              <ProductCard key={project.id} project={project} />
+            ))}
           </div>
-          <div className='flex justify-center'>
-            <Button
-              text={'Discover more projects'}
-              iconUrl='/arrow-up-right.svg'
-              iconPosition='right'
-              variant='secondary'
-              textColor='text-white'
-              handleClick={handleClick}
-            />
-          </div>
+          {/* Add logic to conditionally load more project - Determine how many should show at a time */}
+          {projectList.length < 11 && (
+            <div className='flex justify-center'>
+              <Button
+                text={'Discover more projects'}
+                iconUrl='/arrow-up-right.svg'
+                iconPosition='right'
+                variant='secondary'
+                textColor='text-white'
+                handleClick={handleClick}
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>

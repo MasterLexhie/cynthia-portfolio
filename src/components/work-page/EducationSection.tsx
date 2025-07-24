@@ -20,7 +20,7 @@ const education: Education = {
 const EducationSection: React.FC = () => {
   return (
     <section className='py-8 sm:py-12 md:py-16 lg:py-20'>
-      <div className='max-w-[1120px] px-[22px] mx-auto'>
+      <div className='max-w-[1120px] px-[22px] sm:px-[66px] mx-auto'>
         <div className='mb-6 sm:mb-8 md:mb-10 lg:mb-12'>
           <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-global-2 mb-6 sm:mb-8 md:mb-10 lg:mb-12 font-product-sans'>
             Education
