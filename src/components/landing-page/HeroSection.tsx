@@ -36,14 +36,14 @@ const HeroSection: React.FC = () => {
         <div className='flex gap-3'>
           <Button
             text={"Let's Talk"}
-            iconUrl='/email-icon.svg'
+            iconUrl='/images/email-icon.svg'
             variant='primary'
             textColor='text-black'
             handleClick={handleClick}
           />
           <Button
             text={'Download Resume'}
-            iconUrl='/download-icon.svg'
+            iconUrl='/images/download-icon.svg'
             variant='secondary'
             textColor='text-white'
             handleClick={handleClick}
