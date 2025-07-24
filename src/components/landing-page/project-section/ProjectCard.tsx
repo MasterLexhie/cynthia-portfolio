@@ -53,7 +53,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
     <div className='bg-[#1C1C1C] border border-[#242424] flex flex-col gap-6 rounded-3xl pt-2 pb-3 px-3.5'>
       <div className='rounded-[12px]'>
         <Image
-          src={project.imageSrc}
+          src={`/images/${project.imageSrc}`}
           alt='project-image'
           width={309}
           height={166}
@@ -87,7 +87,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
               </span>
               <span className='button-icon w-[20px] h-[20px]'>
                 <Image
-                  src='/arrow-up-right.svg'
+                  src='/images/arrow-up-right.svg'
                   alt='icon'
                   width={20}
                   height={20}
@@ -105,7 +105,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
               </span>
               <span className='button-icon w-[20px] h-[20px]'>
                 <Image
-                  src='/arrow-up-right.svg'
+                  src='/images/arrow-up-right.svg'
                   alt='icon'
                   width={20}
                   height={20}

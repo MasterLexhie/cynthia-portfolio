@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
       <div className='max-w-[1120px] px-[22px] sm:px-[66px] mx-auto'>
         <div className='mb-8 md:mb-[38px] w-[120] sm:w-[170px] md:w-[200]'>
           <Image
-            src='/profile-logo.svg'
+            src='/images/profile-logo.svg'
             alt='cynthia in animated form'
             width={120}
             height={120}
