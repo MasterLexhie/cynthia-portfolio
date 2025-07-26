@@ -55,7 +55,7 @@ const SkillSection: React.FC = () => {
   >('tools')
 
   return (
-    <section className='pb-8 sm:pb-12 lg:pb-[60px]'>
+    <section className='pb-40'>
       <div className='max-w-[1120px] px-[22px] sm:px-[66px] mx-auto'>
         <h2 className='text-global-2 font-product-sans font-bold text-2xl sm:text-3xl lg:text-[28px] leading-[34px] mb-8 sm:mb-12 lg:mb-[60px]'>
           Skills

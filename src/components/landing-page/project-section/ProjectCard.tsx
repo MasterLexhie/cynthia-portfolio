@@ -60,8 +60,8 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
           className='w-full'
         />
       </div>
-      <div className='flex flex-col'>
-        <div className='flex flex-col gap-3 mb-[24px]'>
+      <div className='flex flex-col h-full'>
+        <div className='flex flex-col gap-3 mb-4'>
           <h3 className='text-white font-bold text-[18px] sm:text-[22px] leading-[150%]'>
             {project.title}
           </h3>
@@ -80,7 +80,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
               href={project.redirectLink}
               target='_blank'
               rel='noopener noreferrer'
-              className='flex items-center gap-2 self-end cursor-pointer'
+              className='flex items-center gap-2 self-end cursor-pointer  mt-auto'
             >
               <span className='text-white font-bold text-[14px] sm:text-[18px] lading-[160%]'>
                 {ctaText}
@@ -97,7 +97,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
             </a>
           ) : (
             <button
-              className='flex items-center gap-2 self-end cursor-pointer'
+              className='flex items-center gap-2 self-end cursor-pointer  mt-auto'
               onClick={handleClick}
             >
               <span className='text-white font-bold text-[14px] sm:text-[18px] lading-[160%]'>
