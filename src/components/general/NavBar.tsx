@@ -20,7 +20,7 @@ const getTimeString = () => {
   )}`
 }
 
-const TimeWithGMT: React.FC = () => {
+const TimeWithGMT = () => {
   const [timeString, setTimeString] = useState<string | null>(null)
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const TimeWithGMT: React.FC = () => {
   return <p className='font-bold text-[16px] uppercase'>{timeString}</p>
 }
 
-export const TopNavBar = () => {
+export const TopNavBar: React.FC = () => {
   return (
     <div className='max-w-[1120px] sm:px-[66px] py-2.5 sm:py-[11px] md:py-[18px] mx-auto'>
       <div className='flex justify-between items-center border-b border-b-[#242424] md:border-b-transparent px-[22px] sm:px-0 pb-[11px] md:pb-0'>
@@ -72,14 +72,6 @@ export const TopNavBar = () => {
           <TimeWithGMT />
         </div>
       </div>
-    </div>
-  )
-}
-
-export const BottomNavBar = () => {
-  return (
-    <div>
-      <h1>Bottom Nav Bar</h1>
     </div>
   )
 }
