@@ -67,7 +67,7 @@ const SkillSection: React.FC = () => {
             <Button
               key={tab.id}
               text={tab.label}
-              onClick={() =>
+              handleClick={() =>
                 setActiveSkillTab(tab.id as 'tools' | 'expertise' | 'languages')
               }
               variant={activeSkillTab === tab.id ? 'primary' : 'secondary'}
