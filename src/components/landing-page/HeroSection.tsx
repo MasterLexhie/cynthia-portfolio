@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { Button } from '@/components/general/Button'
 
 const HeroSection: React.FC = () => {
-  const handleClick = () => alert("let's Talk")
   return (
     <section className='pt-[22px] sm:pt-6 md:pt-[74] pb-[41px] sm:pb-[79px] md:pb-[122px]'>
       <div className='max-w-[1120px] px-[22px] sm:px-[66px] mx-auto'>
@@ -39,14 +38,16 @@ const HeroSection: React.FC = () => {
             iconUrl='/images/email-icon.svg'
             variant='primary'
             textColor='text-black'
-            handleClick={handleClick}
+            isLink={true}
+            linkUrl='mailto:smilewithcynthia@gmail.com'
           />
           <Button
             text={'Download Resume'}
             iconUrl='/images/download-icon.svg'
             variant='secondary'
             textColor='text-white'
-            handleClick={handleClick}
+            isLink={true}
+            linkUrl='https://docs.google.com/document/d/1JgUYR9qE-IclILxOALW2r0GJi4cA06UaFzjNcfQwdGM/mobilebasic?fbclid=PAQ0xDSwLzXtJleHRuA2FlbQIxMAABpwRDREckNsfT5kN4FgqSJv4a7-ASFCzw2exDDYgSfX97atFhB-rzi1dNrzzg_aem_jjqKMv-Q7u8AWDToz-8iWg'
           />
         </div>
       </div>

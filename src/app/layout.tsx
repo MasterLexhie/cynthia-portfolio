@@ -19,12 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className='antialiased'>
+      <body>
         <TopNavBar />
         {children}
         <BottomNavBar />
 
-        <button
+        <a
+          href='mailto:smilewithcynthia@gmail.com'
+          rel='noopener noreferrer'
           className={`flex justify-center items-center rounded-full font-bold text-[14px] sm:text-base cursor-pointer border border-[#9898982e] bg-white fixed sm:hidden right-8 bottom-24 z-50 w-[42px] h-[42px]`}
         >
           <span className='button-icon'>
@@ -35,7 +37,7 @@ export default function RootLayout({
               height={20}
             />
           </span>
-        </button>
+        </a>
       </body>
     </html>
   )

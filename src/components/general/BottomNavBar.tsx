@@ -14,8 +14,6 @@ export const BottomNavBar: React.FC = () => {
   const pathname = usePathname()
   const activeIndex = navLinks.findIndex((link) => link.href === pathname)
 
-  const handleClick = () => alert("let's Talk")
-
   return (
     <nav className='fixed bottom-6 left-1/2 z-50 -translate-x-1/2 w-[calc(100%-3rem)] sm:w-[calc(100%-8.5rem)] lg:max-w-[877px] rounded-full px-2 py-2 bg-white/10 backdrop-blur-md shadow-lg border border-white/20 flex justify-between items-center glass-nav'>
       <ul className='relative flex w-full sm:w-[45%] justify-between items-center'>
@@ -50,7 +48,8 @@ export const BottomNavBar: React.FC = () => {
           iconUrl='/images/email-icon.svg'
           variant='primary'
           textColor='text-black'
-          handleClick={handleClick}
+          isLink={true}
+          linkUrl='mailto:smilewithcynthia@gmail.com'
         />
       </div>
     </nav>

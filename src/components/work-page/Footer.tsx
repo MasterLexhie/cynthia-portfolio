@@ -9,8 +9,11 @@ interface SocialLink {
 
 const socialLinks: SocialLink[] = [
   { name: 'Follow me on X', url: '#' },
-  { name: 'LinkedIn', url: '#' },
-  { name: 'Instagram', url: '#' },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/cynthia-osi-1207b6a9/'
+  },
+  { name: 'Instagram', url: 'https://www.instagram.com/phoenix.szn' },
   { name: 'Tiktok', url: '#' },
   { name: 'Behance', url: '#' },
   { name: 'Youtube', url: '#' }
