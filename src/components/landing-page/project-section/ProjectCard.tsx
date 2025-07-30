@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import Image from 'next/image'
 import ProjectTag from './ProjectTag'
-import ProjectModal from './ProjectModal'
+import ProjectModal from '../../modals/ProjectModal'
 import { IProjectList } from '@/data/projects'
 
 interface IProjectCard {
@@ -35,19 +35,22 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
 
   return (
     <>
-      <div className='bg-[#1C1C1C] border border-[#242424] flex flex-col gap-6 rounded-3xl pt-2 pb-3 px-3.5'>
-        <div className='rounded-[12px]'>
+      <button
+        className='bg-[#1C1C1C] border border-[#242424] flex flex-col gap-6 rounded-3xl pt-2 pb-3 px-3.5 cursor-pointer'
+        onClick={handleClick}
+      >
+        <div className='rounded-[12px] group overflow-hidden h-full'>
           <Image
             src={`/images/project-images/${project.imageSrc[0]}`}
             alt='project-image'
             width={309}
             height={166}
-            className='w-full'
+            className='w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105'
           />
         </div>
         <div className='flex flex-col h-full'>
           <div className='flex flex-col gap-3 mb-4'>
-            <h3 className='text-white font-bold text-[18px] sm:text-[22px] leading-[150%]'>
+            <h3 className='text-white font-bold text-[18px] sm:text-[22px] leading-[150%] text-left'>
               {project.title}
             </h3>
             <div className='flex flex-wrap gap-2'>
@@ -55,7 +58,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
                 <ProjectTag key={index} tag={tag} />
               ))}
             </div>
-            <p className='text-[#B5B5B5] font-normal text-[14px] sm:text-[18px] leading-[160%]'>
+            <p className='text-[#B5B5B5] font-normal text-[14px] sm:text-[18px] leading-[160%] text-left'>
               {project.description}
             </p>
           </div>
@@ -81,10 +84,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
                 </span>
               </a>
             ) : (
-              <button
-                className='flex items-center gap-2 self-end cursor-pointer  mt-auto'
-                onClick={handleClick}
-              >
+              <p className='flex items-center gap-2 self-end  mt-auto'>
                 <span className='text-white font-bold text-[14px] sm:text-[18px] lading-[160%]'>
                   {ctaText}
                 </span>
@@ -97,10 +97,10 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
                     className='w-full h-full'
                   />
                 </span>
-              </button>
+              </p>
             ))}
         </div>
-      </div>
+      </button>
 
       {/* Project Modal */}
       <ProjectModal

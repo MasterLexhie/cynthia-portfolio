@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Modal from '@/components/general/Modal'
-import ProjectTag from './ProjectTag'
+import ProjectTag from '@/components/landing-page/project-section/ProjectTag'
 import { IProjectList } from '@/data/projects'
 
 interface ProjectModalProps {

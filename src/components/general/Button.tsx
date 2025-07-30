@@ -26,7 +26,10 @@ export const Button: React.FC<ButtonProps> = ({
   linkUrl = '',
   ...props
 }) => {
-  const bgClass = variant === 'primary' ? 'bg-white' : 'bg-[#242424]'
+  const bgClass =
+    variant === 'primary'
+      ? 'bg-white hover:bg-[#E8E8E8]'
+      : 'bg-[#242424] hover:bg-[#333333]'
 
   return (
     <>

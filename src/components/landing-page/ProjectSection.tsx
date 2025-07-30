@@ -9,8 +9,8 @@ const ProjectSection: React.FC = () => {
   const handleClick = () => alert("let's Talk")
 
   return (
-    <section className='pb-40'>
-      <div className='max-w-[1120px] px-[22px] sm:px-[66px] mx-auto'>
+    <section id='projects' className='pb-40'>
+      <div className='max-w-[1120px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
         <div className='flex flex-col gap-2.5'>
           <h2 className='font-bold text-[20px] sm:text-[24] md:text-[32px] text-white'>
             Projects

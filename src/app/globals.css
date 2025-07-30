@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&family=Manrope:wght@500;600&display=swap');
 @import 'tailwindcss';
 
-/* @layer base { */
-:root {
-  /* Global Colors */
-  --global-bg-1: #191919;
-  --global-bg-2: #242424;
-  --global-text-1: #b5b5b5;
-  --global-text-2: #ffffff;
-  --global-text-3: #8c8c8c;
+@theme {
+  --font-product-sans: 'Product Sans', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
 
-  /* Header Colors */
-  --header-text-1: #191919;
+  --color-global-bg-1: #191919;
+  --color-global-bg-2: #242424;
+  --color-global-text-1: #b5b5b5;
+  --color-global-text-2: #ffffff;
+  --color-global-text-3: #8c8c8c;
 
-  /* Button Colors */
-  --button-bg-1: #ffffff;
-  --button-text-1: #000000;
+  --color-header-text-1: #191919;
+
+  --color-button-bg-1: #ffffff;
+  --color-button-text-1: #000000;
 }
-/* } */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background: var(--global-bg-1);
-  color: var(--global-text-2);
+  background: var(--color-global-bg-1);
+  color: var(--color-global-text-2);
   font-family: 'Product Sans', 'Manrope', sans-serif;
   box-sizing: border-box;
 }
@@ -32,7 +34,6 @@ body {
   box-sizing: inherit;
 }
 
-/* @layer utilities { */
 .fancy-border {
   border-width: 1px;
   border-style: solid;
@@ -53,33 +54,33 @@ body {
     ),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
+
 /* Global */
 .bg-global-1 {
-  background-color: var(--global-bg-1);
+  background-color: var(--color-global-bg-1);
 }
 .bg-global-2 {
-  background-color: var(--global-bg-2);
+  background-color: var(--color-global-bg-2);
 }
 .text-global-1 {
-  color: var(--global-text-1);
+  color: var(--color-global-text-1);
 }
 .text-global-2 {
-  color: var(--global-text-2);
+  color: var(--color-global-text-2);
 }
 .text-global-3 {
-  color: var(--global-text-3);
+  color: var(--color-global-text-3);
 }
 
 /* Header */
 .text-header-1 {
-  color: var(--header-text-1);
+  color: var(--color-header-text-1);
 }
 
 /* Button */
 .bg-button-1 {
-  background-color: var(--button-bg-1);
+  background-color: var(--color-button-bg-1);
 }
 .text-button-1 {
-  color: var(--button-text-1);
+  color: var(--color-button-text-1);
 }
-/* } */

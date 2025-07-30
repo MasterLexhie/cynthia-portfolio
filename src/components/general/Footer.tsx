@@ -8,15 +8,18 @@ interface SocialLink {
 }
 
 const socialLinks: SocialLink[] = [
-  { name: 'Follow me on X', url: '#' },
+  { name: 'Follow me on X', url: 'https://x.com/Phoenix_XVII' },
   {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/cynthia-osi-1207b6a9/'
   },
   { name: 'Instagram', url: 'https://www.instagram.com/phoenix.szn' },
-  { name: 'Tiktok', url: '#' },
-  { name: 'Behance', url: '#' },
-  { name: 'Youtube', url: '#' }
+  { name: 'Tiktok', url: 'https://www.tiktok.com/@designs_by_cynt' },
+  { name: 'Behance', url: 'https://www.behance.net/839d7a1eCynthiaOsi' },
+  {
+    name: 'Youtube',
+    url: 'https://www.youtube.com/channel/UCzEWdXbDiZZvnpepKsamo2A'
+  }
 ]
 
 const Footer: React.FC = () => {
@@ -25,7 +28,6 @@ const Footer: React.FC = () => {
       <div className='max-w-[1240px] mx-auto'>
         <div className='bg-[#242424] border border-dashed border-gray-600 rounded-lg p-4 sm:p-6 md:p-8'>
           <div className='flex flex-col-reverse lg:flex-row justify-between items-start lg:items-center gap-8'>
-            {/* Copyright */}
             <div className='flex items-center space-x-2 sm:space-x-3'>
               <Image
                 src='/images/img_vector.svg'
@@ -39,13 +41,12 @@ const Footer: React.FC = () => {
               </span>
             </div>
 
-            {/* Social Links */}
             <div className='flex flex-wrap items-center gap-2 text-sm sm:text-[22px] leading-[120%] text-global-3 font-product-sans'>
               {socialLinks.map((link, index) => (
                 <React.Fragment key={link.name}>
                   <a
                     href={link.url}
-                    className='hover:text-white transition-colors duration-200'
+                    className='hover:text-[#E8E8E8] hover:underline transition-colors duration-200'
                   >
                     {link.name}
                   </a>

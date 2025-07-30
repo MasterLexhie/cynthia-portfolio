@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { TopNavBar } from '@/components/general/NavBar'
 import { BottomNavBar } from '@/components/general/BottomNavBar'
 import './globals.css'
+import Footer from '@/components/general/Footer'
 
 export const metadata: Metadata = {
   title: "Cynthia's Portfolio",
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <TopNavBar />
         {children}
+        <Footer />
         <BottomNavBar />
 
         <a
@@ -38,6 +40,9 @@ export default function RootLayout({
             />
           </span>
         </a>
+        <div className='fixed bottom-0 w-full h-11 transition-all duration-300 ease-in-out]'>
+          <div className='absolute inset-0 backdrop-blur-sm [mask:linear-gradient(to_top,black_0%,black_50%,transparent_100%)]'></div>
+        </div>
       </body>
     </html>
   )

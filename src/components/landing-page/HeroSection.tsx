@@ -6,8 +6,8 @@ import { Button } from '@/components/general/Button'
 
 const HeroSection: React.FC = () => {
   return (
-    <section className='pt-[22px] sm:pt-6 md:pt-[74] pb-[41px] sm:pb-[79px] md:pb-[122px]'>
-      <div className='max-w-[1120px] px-[22px] sm:px-[66px] mx-auto'>
+    <section className='pt-[106px] sm:pt-[108px] lg:pt-[158px] pb-[41px] sm:pb-[79px] md:pb-[122px]'>
+      <div className='max-w-[1120px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
         <div className='mb-8 md:mb-[38px] w-[120] sm:w-[170px] md:w-[200]'>
           <Image
             src='/images/profile-logo.svg'

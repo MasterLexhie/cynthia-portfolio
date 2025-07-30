@@ -35,7 +35,7 @@ const processSteps = [
 const MyProcessSection: React.FC = () => {
   return (
     <section className='pb-8 sm:pb-12 lg:pb-[146px]'>
-      <div className='max-w-[1120px] px-[22px] sm:px-[66px] mx-auto'>
+      <div className='max-w-[1120px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
         <h2 className='text-global-2 font-product-sans font-bold text-xl sm:text-2xl lg:text-[28px] leading-[34px] mb-[22px] sm:mb-8 lg:mb-[72px]'>
           My Process
         </h2>
