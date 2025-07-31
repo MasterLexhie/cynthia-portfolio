@@ -6,8 +6,6 @@ import { Button } from '../general/Button'
 import { projectList } from '@/data/projects'
 
 const ProjectSection: React.FC = () => {
-  const handleClick = () => alert("let's Talk")
-
   return (
     <section id='projects' className='pb-40'>
       <div className='max-w-[1120px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
@@ -25,19 +23,18 @@ const ProjectSection: React.FC = () => {
               <ProductCard key={project.id} project={project} />
             ))}
           </div>
-          {/* Add logic to conditionally load more project - Determine how many should show at a time */}
-          {projectList.length < 11 && (
-            <div className='flex justify-center'>
-              <Button
-                text={'Discover more projects'}
-                iconUrl='/arrow-up-right.svg'
-                iconPosition='right'
-                variant='secondary'
-                textColor='text-white'
-                handleClick={handleClick}
-              />
-            </div>
-          )}
+
+          <div className='flex justify-center'>
+            <Button
+              text={'Discover more projects'}
+              iconUrl='/images/arrow-up-right.svg'
+              iconPosition='right'
+              variant='secondary'
+              textColor='text-white'
+              isLink={true}
+              linkUrl='https://www.behance.net/839d7a1eCynthiaOsi'
+            />
+          </div>
         </div>
       </div>
     </section>
