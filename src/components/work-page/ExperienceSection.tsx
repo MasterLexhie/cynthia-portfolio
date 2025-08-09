@@ -5,7 +5,7 @@ import React from 'react'
 const ExperienceSection: React.FC = () => {
   return (
     <section className='pt-[106px] sm:pt-[108px] lg:pt-[180px] pb-8 sm:pb-12 md:pb-16 lg:pb-20'>
-      <div className='max-w-[1120px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
+      <div className='max-w-[840px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
         <div className='mb-[22px] sm:mb-8 lg:mb-[82px]'>
           <h1 className='text-xl sm:text-2xl lg:text-3xl font-bold text-global-2 mb-3 md:mb-2.5 font-product-sans'>
             Works

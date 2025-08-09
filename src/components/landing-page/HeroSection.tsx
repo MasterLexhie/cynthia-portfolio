@@ -7,7 +7,7 @@ import { Button } from '@/components/general/Button'
 const HeroSection: React.FC = () => {
   return (
     <section className='pt-[106px] sm:pt-[108px] lg:pt-[158px] pb-[41px] sm:pb-[79px] md:pb-[122px]'>
-      <div className='max-w-[1120px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
+      <div className='max-w-[840px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
         <div className='mb-8 md:mb-[38px] w-[120] sm:w-[170px] md:w-[200]'>
           <Image
             src='/images/profile-logo.svg'
@@ -18,10 +18,10 @@ const HeroSection: React.FC = () => {
           />
         </div>
         <div className='flex flex-col gap-3.5 sm:gap-[22px] md:gap-8 mb-3.5 sm:mb-[22px] md:mb-8'>
-          <h2 className='text-white font-bold text-base sm:text-[22px] md:text-2xl'>
+          <h2 className='text-white font-bold text-xl sm:text-[26px] lg:text-4xl'>
             Product designer based in Nigeria
           </h2>
-          <p className='text-[#B5B5B5] font-normal text-[14px] sm:text-[18px] leading-[160%]'>
+          <p className='text-[#B5B5B5] font-bold text-base sm:text-xl lg:text-[22px] leading-[160%]'>
             Open to full-time mid-level roles in product design, remote or
             hybrid as well as freelance opportunities.
           </p>

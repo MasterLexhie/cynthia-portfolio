@@ -4,7 +4,7 @@ import Image from 'next/image'
 const AboutMeSection: React.FC = () => {
   return (
     <section className='pt-[107px] sm:pt-[108px] lg:pt-[180px] pb-[46px] sm:pb-[34px] lg:pb-[98px]'>
-      <div className='max-w-[1120px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
+      <div className='max-w-[840px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
         <h1 className='text-global-2 font-product-sans font-bold text-xl sm:text-2xl lg:text-[32px] leading-[39px] mb-[22px] sm:mb-8 lg:mb-[82px]'>
           About me
         </h1>

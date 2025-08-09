@@ -39,13 +39,13 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
         className='bg-[#1C1C1C] border border-[#242424] flex flex-col gap-6 rounded-3xl pt-2 pb-3 px-3.5 cursor-pointer'
         onClick={handleClick}
       >
-        <div className='rounded-[12px] group overflow-hidden h-full'>
+        <div className='rounded-[12px] h-full'>
           <Image
             src={`/images/project-images/${project.imageSrc[0]}`}
             alt='project-image'
             width={309}
             height={166}
-            className='w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105'
+            className='w-full object-cover'
           />
         </div>
         <div className='flex flex-col h-full'>

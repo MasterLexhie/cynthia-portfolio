@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { Button } from '../general/Button'
 
 const skillTabs = [
@@ -37,14 +38,35 @@ const expertiseData = [
 
 const languageData = ['English - Advanced', 'French - Beginner']
 
-interface SkillCardProp {
-  skill: string
+const getToolIconPath = (toolName: string): string => {
+  const normalized = toolName
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+
+  const exceptions: Record<string, string> = {
+    lovableai: 'lovable'
+  }
+
+  const fileBase = exceptions[normalized] ?? normalized
+  return `/images/${fileBase}.svg`
 }
 
-const SkillCard: React.FC<SkillCardProp> = ({ skill }) => {
+interface SkillCardProp {
+  skill: string
+  iconSrc?: string
+}
+
+const SkillCard: React.FC<SkillCardProp> = ({ skill, iconSrc }) => {
   return (
-    <div className='bg-[#242424] text-white rounded-[8px] px-3 py-3 sm:px-4 sm:py-4 lg:px-4 lg:py-4 font-product-sans font-normal text-base sm:text-lg lg:text-[18px] leading-[22px] w-full border border-[#9898982e]'>
-      {skill}
+    <div className='bg-[#242424] text-white rounded-[8px] px-3 py-3 sm:px-4 sm:py-4 lg:px-4 lg:py-4 font-product-sans font-normal text-[15px] sm:text-lg lg:text-lg leading-[22px] w-full border border-[#9898982e]'>
+      <div className='flex items-center gap-[10px]'>
+        {iconSrc && (
+          <Image src={iconSrc} alt={`${skill} icon`} width={22} height={22} />
+        )}
+        <span>{skill}</span>
+      </div>
     </div>
   )
 }
@@ -56,7 +78,7 @@ const SkillSection: React.FC = () => {
 
   return (
     <section className='pb-40'>
-      <div className='max-w-[1120px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
+      <div className='max-w-[840px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
         <h2 className='text-global-2 font-product-sans font-bold text-2xl sm:text-3xl lg:text-[28px] leading-[34px] mb-8 sm:mb-12 lg:mb-[60px]'>
           Skills
         </h2>
@@ -91,7 +113,11 @@ const SkillSection: React.FC = () => {
         {activeSkillTab === 'tools' && (
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-[22px]'>
             {toolsData.map((tool, index) => (
-              <SkillCard key={index} skill={tool} />
+              <SkillCard
+                key={index}
+                skill={tool}
+                iconSrc={getToolIconPath(tool)}
+              />
             ))}
           </div>
         )}

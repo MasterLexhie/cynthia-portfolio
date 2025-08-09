@@ -8,7 +8,7 @@ import { projectList } from '@/data/projects'
 const ProjectSection: React.FC = () => {
   return (
     <section id='projects' className='pb-40'>
-      <div className='max-w-[1120px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
+      <div className='max-w-[840px] px-[22px] sm:px-[66px] lg:px-[22px] mx-auto'>
         <div className='flex flex-col gap-2.5'>
           <h2 className='font-bold text-[20px] sm:text-[24] md:text-[32px] text-white'>
             Projects
@@ -18,7 +18,7 @@ const ProjectSection: React.FC = () => {
           </p>
         </div>
         <div>
-          <div className='grid md:[grid-template-columns:repeat(auto-fit,minmax(400px,1fr))] lg:[grid-template-columns:repeat(auto-fit,minmax(45%,1fr))] gap-x-3.5 gap-y-8 py-8'>
+          <div className='grid gap-4 py-8'>
             {projectList.map((project) => (
               <ProductCard key={project.id} project={project} />
             ))}

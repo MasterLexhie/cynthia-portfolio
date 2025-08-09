@@ -122,7 +122,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         role='document'
       >
         <div className='relative'>
-          <div className='pt-8 sm:pt-16 lg:pt-12 pb-3 max-w-[1120px] w-full px-[22px] sm:px-[66px] mx-auto'>
+          <div className='pt-8 sm:pt-16 lg:pt-12 pb-3 max-w-[840px] w-full px-[22px] sm:px-[66px] mx-auto'>
             <Button
               text={'Back'}
               iconUrl='/images/back-arrow-icon.svg'
@@ -131,62 +131,58 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
               handleClick={onClose}
             />
           </div>
-          <div className='max-w-[1120px] px-[22px] sm:px-[66px] mx-auto flex-1 overflow-y-auto focus:outline-none min-h-0 overscroll-contain'>
+          <div className='max-w-[840px] px-[22px] sm:px-[66px] mx-auto flex-1 overflow-y-auto focus:outline-none min-h-0 overscroll-contain'>
             {children}
           </div>
-          <div className='pt-[42px] lg:pt-[74px] flex flex-col gap-20 relative'>
-            <div className='relative max-w-[1120px] mx-auto w-full'>
-              <ReachOut />
-              {/* Desktop scroll to top button */}
-              {showScrollButton && (
-                <button
-                  onClick={scrollToTop}
-                  className='cursor-pointer hidden absolute bottom-0 right-[calc(100%-110px)] sm:flex items-center justify-center w-12 h-12 bg-[#242424] hover:bg-[#333333] border border-[#404040] rounded-full transition-colors duration-200'
-                  aria-label='Scroll to top'
+          <div className='max-w-[900px] w-full pt-[42px] lg:pt-[74px] mx-auto relative px-[22px]'>
+            {/* Desktop scroll to top button */}
+            {showScrollButton && (
+              <button
+                onClick={scrollToTop}
+                className='cursor-pointer hidden sm:flex items-center justify-center w-12 h-12 bg-[#242424] hover:bg-[#333333] border border-[#404040] rounded-full transition-colors duration-200'
+                aria-label='Scroll to top'
+              >
+                <svg
+                  width='16'
+                  height='16'
+                  viewBox='0 0 16 16'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
                 >
-                  <svg
-                    width='16'
-                    height='16'
-                    viewBox='0 0 16 16'
-                    fill='none'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      d='M8 12L8 4M8 4L4 8M8 4L12 8'
-                      stroke='white'
-                      strokeWidth='1.5'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    />
-                  </svg>
-                </button>
-              )}
-              {/* Mobile scroll to top button - bottom right */}
-              {showScrollButton && (
-                <button
-                  onClick={scrollToTop}
-                  className='sm:hidden absolute -bottom-[65px] right-6 z-10 flex items-center justify-center w-12 h-12 bg-[#242424] hover:bg-[#333333] border border-[#404040] rounded-full shadow-lg transition-colors duration-200'
-                  aria-label='Scroll to top'
+                  <path
+                    d='M8 12L8 4M8 4L4 8M8 4L12 8'
+                    stroke='white'
+                    strokeWidth='1.5'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                </svg>
+              </button>
+            )}
+            {/* Mobile scroll to top button - bottom right */}
+            {showScrollButton && (
+              <button
+                onClick={scrollToTop}
+                className='sm:hidden absolute -bottom-[19px] right-6 z-10 flex items-center justify-center w-12 h-12 bg-[#242424] hover:bg-[#333333] border border-[#404040] rounded-full shadow-lg transition-colors duration-200'
+                aria-label='Scroll to top'
+              >
+                <svg
+                  width='16'
+                  height='16'
+                  viewBox='0 0 16 16'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
                 >
-                  <svg
-                    width='16'
-                    height='16'
-                    viewBox='0 0 16 16'
-                    fill='none'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      d='M8 12L8 4M8 4L4 8M8 4L12 8'
-                      stroke='white'
-                      strokeWidth='1.5'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    />
-                  </svg>
-                </button>
-              )}
-            </div>
-            <Footer />
+                  <path
+                    d='M8 12L8 4M8 4L4 8M8 4L12 8'
+                    stroke='white'
+                    strokeWidth='1.5'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
       </div>
