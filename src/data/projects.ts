@@ -47,12 +47,12 @@ export const projectList: IProjectList[] = [
       'A homeownership cooperative offering access to homeownership through structured savings plans, mortgage options, and financial advisory services.',
     tags: ['UI Design', 'UX Design', 'Mobile App', 'Web App', 'Website'],
     imageSrc: [
-      '/project-image-1-a.png',
-      '/project-image-1-b.png',
-      '/project-image-1-c.png',
-      '/project-image-1-d.png',
-      '/project-image-1-e.png',
-      '/project-image-1-f.png'
+      '/project-image-1-a.webp',
+      '/project-image-1-b.webp',
+      '/project-image-1-c.webp',
+      '/project-image-1-d.webp',
+      '/project-image-1-e.webp',
+      '/project-image-1-f.webp'
     ],
     projectType: 'case_study',
     role: [
@@ -123,11 +123,11 @@ export const projectList: IProjectList[] = [
       'A simple, friendly group expense tracker that helps people stay on top of who paid, who’s yet to pay, and how to gently remind those who forgot, even if they’re not on the app.',
     tags: ['UI Design', 'UX Design', 'Mobile App'],
     imageSrc: [
-      '/project-image-2-a.png',
-      '/project-image-2-b.png',
-      '/project-image-2-c.png',
-      '/project-image-2-d.png',
-      '/project-image-2-e.png'
+      '/project-image-2-a.webp',
+      '/project-image-2-b.webp',
+      '/project-image-2-c.webp',
+      '/project-image-2-d.webp',
+      '/project-image-2-e.webp'
     ],
     projectType: 'case_study',
     role: [
@@ -188,7 +188,7 @@ export const projectList: IProjectList[] = [
           'Thinking about status transparency: showing who’s paid, pending, or opted out without judgment.',
           'An interview with 5 friends to validate assumptions.'
         ],
-        imageSrc: ['/project-image-2-a-1.png']
+        imageSrc: ['/project-image-2-a-1.webp']
       },
       {
         title: 'Outcome: Simple, humane, and a little friendlier',
@@ -220,7 +220,7 @@ export const projectList: IProjectList[] = [
     description:
       'A modern saas tool built for property owners and managers to stay on top of listings, tenants, and finances all in one place.',
     tags: ['UI Design', 'UX Design', 'Landing Page', 'Dashboard'],
-    imageSrc: ['/project-image-3.png'],
+    imageSrc: ['/project-image-3.webp'],
     projectType: 'live_site',
     redirectLink: 'https://propify-portfolio-grow.lovable.app/'
   },
@@ -230,7 +230,7 @@ export const projectList: IProjectList[] = [
     description:
       'A marketplace where users can easily mint their unique digital assets, browse a diverse marketplace, and engage with a vibrant community of NFT enthusiasts.',
     tags: ['UI Design', 'UX Design', 'Landing Page'],
-    imageSrc: ['/project-image-4.png'],
+    imageSrc: ['/project-image-4.webp'],
     projectType: 'live_site',
     redirectLink: 'https://nftopia.lovable.app/'
   },
@@ -240,7 +240,7 @@ export const projectList: IProjectList[] = [
     description:
       'It was designed as part of a savings app experience specifically to introduce users to the why behind saving, not just the how.',
     tags: ['UI Design', 'UX Design', 'Mobile App'],
-    imageSrc: ['/project-image-5-a.png'],
+    imageSrc: ['/project-image-5-a.webp'],
     projectType: 'ui_design',
     role: [
       'UX Research',
@@ -285,7 +285,7 @@ export const projectList: IProjectList[] = [
     description:
       'A book translation app that lets readers choose how stories sound, not just what language they’re in.',
     tags: ['UI Design', 'UX Design', 'Mobile App'],
-    imageSrc: ['/project-image-6-a.png'],
+    imageSrc: ['/project-image-6-a.webp'],
     projectType: 'ui_design',
     role: [
       'UX Research',
@@ -329,7 +329,7 @@ export const projectList: IProjectList[] = [
     description:
       'A website that captures not just images, but stories, emotion, and the tiny details we often overlook. It’ll be a space where light meets lens, and moments are frozen in their most honest form.',
     tags: ['UI Design', 'UX Design', 'Landing Page'],
-    imageSrc: ['/project-image-7.png'],
+    imageSrc: ['/project-image-7.webp'],
     projectType: 'live_site',
     redirectLink: 'https://backlight-landing-page1.lovable.app/'
   },
@@ -339,7 +339,7 @@ export const projectList: IProjectList[] = [
     description:
       'A game website hero section with smooth hover effects, immersive design, and that satisfying endless scroll that keeps you going without even realizing it.',
     tags: ['UI Design', 'UX Design', 'Landing Page'],
-    imageSrc: ['/project-image-8.png'],
+    imageSrc: ['/project-image-8.webp'],
     projectType: 'live_soon'
   },
   {
@@ -348,7 +348,7 @@ export const projectList: IProjectList[] = [
     description:
       'This dashboard was designed to give admins a straightforward way to manage user roles and permissions without hassle.',
     tags: ['UI Design', 'UX Design', 'Web App'],
-    imageSrc: ['/project-image-9-a.png'],
+    imageSrc: ['/project-image-9-a.webp'],
     projectType: 'ui_design',
     role: [
       'UX Research',
@@ -391,7 +391,7 @@ export const projectList: IProjectList[] = [
     title: 'Task Management App',
     description: `This analytics screen was designed to give users a quick, clear view of their project progress, from what's done to what's still in motion.`,
     tags: ['UI Design', 'UX Design', 'Mobile App'],
-    imageSrc: ['/project-image-10-a.png'],
+    imageSrc: ['/project-image-10-a.webp'],
     projectType: 'ui_design',
     role: [
       'UX Research',
