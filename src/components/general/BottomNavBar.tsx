@@ -67,6 +67,7 @@ export const BottomNavBar: React.FC = () => {
                       width={16}
                       height={16}
                       className='w-full h-full'
+                      priority
                     />
                   </div>
                 ) : (
@@ -77,6 +78,7 @@ export const BottomNavBar: React.FC = () => {
                       width={16}
                       height={16}
                       className='w-full h-full'
+                      priority
                     />
                   </div>
                 )}

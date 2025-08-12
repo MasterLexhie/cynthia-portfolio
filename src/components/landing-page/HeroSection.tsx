@@ -15,6 +15,7 @@ const HeroSection: React.FC = () => {
             width={120}
             height={120}
             className='w-full h-full'
+            priority
           />
         </div>
         <div className='flex flex-col gap-3.5 sm:gap-[22px] md:gap-8 mb-3.5 sm:mb-[22px] md:mb-8'>

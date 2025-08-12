@@ -42,13 +42,13 @@ export const Button: React.FC<ButtonProps> = ({
         >
           {iconUrl && iconPosition === 'left' && (
             <span className='button-icon'>
-              <Image src={iconUrl} alt='icon' width={16} height={16} />
+              <Image src={iconUrl} alt='icon' width={16} height={16} priority />
             </span>
           )}
           <span>{text}</span>
           {iconUrl && iconPosition === 'right' && (
             <span className='button-icon'>
-              <Image src={iconUrl} alt='icon' width={16} height={16} />
+              <Image src={iconUrl} alt='icon' width={16} height={16} priority />
             </span>
           )}
         </a>
@@ -60,13 +60,13 @@ export const Button: React.FC<ButtonProps> = ({
         >
           {iconUrl && iconPosition === 'left' && (
             <span className='button-icon'>
-              <Image src={iconUrl} alt='icon' width={16} height={16} />
+              <Image src={iconUrl} alt='icon' width={16} height={16} priority />
             </span>
           )}
           <span>{text}</span>
           {iconUrl && iconPosition === 'right' && (
             <span className='button-icon'>
-              <Image src={iconUrl} alt='icon' width={16} height={16} />
+              <Image src={iconUrl} alt='icon' width={16} height={16} priority />
             </span>
           )}
         </button>
