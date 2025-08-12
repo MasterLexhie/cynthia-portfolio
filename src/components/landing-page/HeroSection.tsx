@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/general/Button'
+import AnimatedCharacters from '@/components/general/AnimatedCharacters'
 
 const HeroSection: React.FC = () => {
   return (
@@ -19,13 +20,20 @@ const HeroSection: React.FC = () => {
           />
         </div>
         <div className='flex flex-col gap-3.5 sm:gap-[22px] md:gap-8 mb-3.5 sm:mb-[22px] md:mb-8'>
-          <h1 className='text-white font-bold text-xl sm:text-[26px] lg:text-4xl'>
-            Product designer based in Nigeria
-          </h1>
-          <p className='text-[#B5B5B5] font-bold text-base sm:text-xl lg:text-[22px] leading-[160%]'>
-            Open to full-time mid-level roles in product design, remote or
-            hybrid as well as freelance opportunities.
-          </p>
+          <AnimatedCharacters
+            as='h1'
+            text='Product designer based in Nigeria'
+            className='text-white font-bold text-xl sm:text-[26px] lg:text-4xl'
+            delay={0.1}
+            stagger={0.05}
+          />
+          <AnimatedCharacters
+            as='p'
+            text='Open to full-time mid-level roles in product design, remote or hybrid as well as freelance opportunities.'
+            className='text-[#B5B5B5] font-bold text-base sm:text-xl lg:text-[22px] leading-[160%]'
+            delay={0.1}
+            stagger={0.05}
+          />
           <p className='text-[#B5B5B5] font-normal text-[14px] sm:text-[18px] mb-[11px] leading-[160%]'>
             I’m a product designer with four years of experience crafting
             user-centered digital experiences. I also illustrate, which adds

@@ -39,7 +39,7 @@ export const BottomNavBar: React.FC = () => {
   return (
     <nav
       aria-label='Primary'
-      className='fixed bottom-6 left-1/2 z-50 -translate-x-1/2 w-[calc(100%-3rem)] sm:w-[calc(100%-8.5rem)] lg:max-w-[877px] rounded-full px-2 py-2 bg-white/10 backdrop-blur-md shadow-lg border border-white/20 flex justify-between items-center glass-nav'
+      className='fixed bottom-6 left-1/2 z-50 -translate-x-1/2 w-[calc(100%-3rem)] sm:w-[calc(100%-8.5rem)] lg:max-w-[877px] rounded-full px-2 py-2 bg-[linear-gradient(0deg,rgba(128,128,128,0.7)_0%,rgba(61,61,61,0.7)_100%)] backdrop-blur-md shadow-lg border border-white/20 flex justify-between items-center glass-nav'
     >
       <div className='relative flex max-lg:flex-1 w-full lg:w-[45%] items-center'>
         <div
