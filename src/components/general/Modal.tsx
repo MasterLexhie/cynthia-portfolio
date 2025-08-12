@@ -2,8 +2,6 @@
 import React, { useEffect, useRef, useCallback, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Button } from './Button'
-import ReachOut from '@/components/general/ReachOut'
-import Footer from '@/components/general/Footer'
 
 interface ModalProps {
   isOpen: boolean
