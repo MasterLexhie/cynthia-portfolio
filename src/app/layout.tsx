@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import Image from 'next/image'
 import { TopNavBar } from '@/components/general/NavBar'
 import { BottomNavBar } from '@/components/general/BottomNavBar'
@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   icons: {
     icon: '/images/profile-logo.svg'
   }
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1
 }
 
 export default function RootLayout({

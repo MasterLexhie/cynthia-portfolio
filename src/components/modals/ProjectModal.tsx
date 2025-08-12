@@ -415,7 +415,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                         width={300}
                         height={200}
                         className='w-full h-auto'
-                        priority={false}
                         sizes='(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 840px'
                       />
                     </div>

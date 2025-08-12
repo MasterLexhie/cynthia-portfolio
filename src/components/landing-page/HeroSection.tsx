@@ -19,9 +19,9 @@ const HeroSection: React.FC = () => {
           />
         </div>
         <div className='flex flex-col gap-3.5 sm:gap-[22px] md:gap-8 mb-3.5 sm:mb-[22px] md:mb-8'>
-          <h2 className='text-white font-bold text-xl sm:text-[26px] lg:text-4xl'>
+          <h1 className='text-white font-bold text-xl sm:text-[26px] lg:text-4xl'>
             Product designer based in Nigeria
-          </h2>
+          </h1>
           <p className='text-[#B5B5B5] font-bold text-base sm:text-xl lg:text-[22px] leading-[160%]'>
             Open to full-time mid-level roles in product design, remote or
             hybrid as well as freelance opportunities.

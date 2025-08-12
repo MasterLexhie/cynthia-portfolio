@@ -90,7 +90,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   useEffect(() => {
     const scrollContainer = modalRef.current
     if (scrollContainer) {
-      scrollContainer.addEventListener('scroll', handleScroll)
+      scrollContainer.addEventListener('scroll', handleScroll, {
+        passive: true
+      })
       return () => {
         scrollContainer.removeEventListener('scroll', handleScroll)
       }

@@ -38,7 +38,16 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
 
   return (
     <>
-      <button
+      <div
+        role='button'
+        tabIndex={0}
+        aria-haspopup='dialog'
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault()
+            handleClick()
+          }
+        }}
         className='bg-[#1C1C1C] border border-[#242424] flex flex-col gap-6 rounded-3xl pt-2 pb-3 px-3.5 cursor-pointer'
         onClick={handleClick}
       >
@@ -72,6 +81,8 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
                 href={project.redirectLink}
                 target='_blank'
                 rel='noopener noreferrer'
+                onClick={(e) => e.stopPropagation()}
+                onKeyDown={(e) => e.stopPropagation()}
                 className='flex items-center gap-2 self-end cursor-pointer  mt-auto'
               >
                 <span className='text-white font-bold text-[14px] sm:text-[18px] lading-[160%]'>
@@ -106,7 +117,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
               </p>
             ))}
         </div>
-      </button>
+      </div>
 
       {/* Project Modal */}
       <ProjectModal
