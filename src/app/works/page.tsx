@@ -3,7 +3,7 @@ import { EducationSection, ExperienceSection } from '@/components/work-page'
 
 export default function Works() {
   return (
-    <main>
+    <main id='main-content'>
       <ExperienceSection />
       <EducationSection />
     </main>

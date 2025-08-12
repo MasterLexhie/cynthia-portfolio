@@ -49,12 +49,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
           <div className='space-y-4'>
             <div className='rounded-[12px] overflow-hidden max-h-[711px]'>
               <Image
-                src={`images/project-images${project.imageSrc[0]}`}
+                src={`/images/project-images${project.imageSrc[0]}`}
                 alt={`${project.title} project image`}
                 width={800}
                 height={400}
                 className='w-full h-auto'
-                priority={isOpen}
+                priority={false}
+                sizes='(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 840px'
               />
             </div>
 
@@ -161,12 +162,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
           <div className='space-y-4'>
             <div className='rounded-[12px] overflow-hidden max-h-[711px]'>
               <Image
-                src={`images/project-images${project.imageSrc[1]}`}
+                src={`/images/project-images${project.imageSrc[1]}`}
                 alt={`${project.title} project image`}
                 width={800}
                 height={400}
                 className='w-full h-auto'
-                priority={isOpen}
+                priority={false}
+                sizes='(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 840px'
               />
             </div>
           </div>
@@ -408,11 +410,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                       className='rounded-[8px] overflow-hidden max-h-[711px]'
                     >
                       <Image
-                        src={`images/project-images${image}`}
+                        src={`/images/project-images${image}`}
                         alt={`${project.title} project image ${index + 2}`}
                         width={300}
                         height={200}
                         className='w-full h-auto'
+                        priority={false}
+                        sizes='(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 840px'
                       />
                     </div>
                   ))}

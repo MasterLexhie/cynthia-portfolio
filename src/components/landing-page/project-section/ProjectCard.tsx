@@ -1,7 +1,10 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import Image from 'next/image'
 import ProjectTag from './ProjectTag'
-import ProjectModal from '../../modals/ProjectModal'
+import dynamic from 'next/dynamic'
+const ProjectModal = dynamic(() => import('../../modals/ProjectModal'), {
+  ssr: false
+})
 import { IProjectList } from '@/data/projects'
 
 interface IProjectCard {
@@ -41,11 +44,12 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
       >
         <div className='rounded-[12px] h-full'>
           <Image
-            src={`/images/project-images/${project.imageSrc[0]}`}
-            alt='project-image'
+            src={`/images/project-images${project.imageSrc[0]}`}
+            alt={`${project.title} preview`}
             width={309}
             height={166}
             className='w-full object-cover'
+            sizes='(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 840px'
           />
         </div>
         <div className='flex flex-col h-full'>
@@ -76,10 +80,11 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
                 <span className='button-icon w-[20px] h-[20px]'>
                   <Image
                     src='/images/arrow-up-right.svg'
-                    alt='icon'
+                    alt=''
                     width={20}
                     height={20}
                     className='w-full h-full'
+                    aria-hidden
                   />
                 </span>
               </a>
@@ -91,10 +96,11 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
                 <span className='button-icon w-[20px] h-[20px]'>
                   <Image
                     src='/images/arrow-up-right.svg'
-                    alt='icon'
+                    alt=''
                     width={20}
                     height={20}
                     className='w-full h-full'
+                    aria-hidden
                   />
                 </span>
               </p>

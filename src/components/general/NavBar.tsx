@@ -29,15 +29,18 @@ const TimeWithGMT = () => {
     const msUntilNextMinute =
       (60 - now.getSeconds()) * 1000 - now.getMilliseconds()
 
+    let intervalId: ReturnType<typeof setInterval> | null = null
     const timeout = setTimeout(() => {
       setTimeString(getTimeString())
-      const interval = setInterval(() => {
+      intervalId = setInterval(() => {
         setTimeString(getTimeString())
       }, 60 * 1000)
-      return () => clearInterval(interval)
     }, msUntilNextMinute)
 
-    return () => clearTimeout(timeout)
+    return () => {
+      clearTimeout(timeout)
+      if (intervalId) clearInterval(intervalId)
+    }
   }, [])
 
   if (!timeString) return null

@@ -31,7 +31,8 @@ const Footer: React.FC = () => {
             <div className='flex items-center space-x-2 sm:space-x-3'>
               <Image
                 src='/images/img_vector.svg'
-                alt='Copyright'
+                alt=''
+                aria-hidden
                 className='w-4 h-4 sm:w-5 sm:h-5'
                 width={16}
                 height={16}

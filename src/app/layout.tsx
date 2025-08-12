@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { TopNavBar } from '@/components/general/NavBar'
 import { BottomNavBar } from '@/components/general/BottomNavBar'
 import './globals.css'
-import Footer from '@/components/general/Footer'
 
 export const metadata: Metadata = {
   title: "Cynthia's Portfolio",
@@ -21,22 +20,29 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
+        <a
+          href='#main-content'
+          className='sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] bg-white text-black rounded px-3 py-2'
+        >
+          Skip to content
+        </a>
         <TopNavBar />
         {children}
-        {/* <Footer /> */}
         <BottomNavBar />
 
         <a
           href='mailto:smilewithcynthia@gmail.com'
           rel='noopener noreferrer'
+          aria-label='Email Cynthia'
           className={`flex justify-center items-center rounded-full font-bold text-[14px] sm:text-base cursor-pointer border border-[#9898982e] bg-white fixed sm:hidden right-8 bottom-24 z-50 w-[42px] h-[42px]`}
         >
           <span className='button-icon'>
             <Image
               src='/images/email-icon.svg'
-              alt='icon'
+              alt=''
               width={20}
               height={20}
+              aria-hidden
             />
           </span>
         </a>

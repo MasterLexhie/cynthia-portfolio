@@ -45,6 +45,7 @@ const AboutMeSection: React.FC = () => {
               width={400}
               height={480}
               className='w-full object-contain max-h-[496px] sm:max-h-[915px] rounded-[12px]'
+              sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px'
             />
           </div>
         </div>

@@ -7,7 +7,7 @@ import {
 
 export default function About() {
   return (
-    <main>
+    <main id='main-content'>
       <AboutMeSection />
       <MyProcessSection />
       <SkillSection />
