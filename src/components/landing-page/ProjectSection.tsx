@@ -33,6 +33,7 @@ const ProjectSection: React.FC = () => {
               textColor='text-white'
               isLink={true}
               linkUrl='https://www.behance.net/839d7a1eCynthiaOsi'
+              target='_blank'
             />
           </div>
         </div>
