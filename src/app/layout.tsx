@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import Image from 'next/image'
 import { TopNavBar } from '@/components/general/NavBar'
 import { BottomNavBar } from '@/components/general/BottomNavBar'
+import Footer from '@/components/general/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
         </a>
         <TopNavBar />
         {children}
+        <Footer />
         <BottomNavBar />
 
         <a
