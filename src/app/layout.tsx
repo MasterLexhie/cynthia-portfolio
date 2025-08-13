@@ -6,7 +6,7 @@ import Footer from '@/components/general/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Cynthia's Portfolio",
+  title: 'Cynthia Osi',
   description: 'Personal portfolio of Cynthia',
   icons: {
     icon: '/images/profile-logo.svg'
