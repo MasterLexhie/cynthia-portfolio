@@ -22,14 +22,14 @@ const HeroSection: React.FC = () => {
         <div className='flex flex-col gap-3.5 sm:gap-[22px] md:gap-8 mb-3.5 sm:mb-[22px] md:mb-8'>
           <AnimatedCharacters
             as='h1'
-            text='Product designer based in Nigeria'
+            text='Product designer based in Lagos, Nigeria'
             className='text-white font-bold text-xl sm:text-[26px] lg:text-4xl'
             delay={0.1}
             stagger={0.05}
           />
           <AnimatedCharacters
             as='p'
-            text='Open to full-time mid-level roles in product design, remote or hybrid as well as freelance opportunities.'
+            text='Open to full-time senior/mid-level roles in product design, remote or hybrid as well as freelance opportunities.'
             className='text-[#B5B5B5] font-bold text-base sm:text-xl lg:text-[22px] leading-[160%]'
             delay={0.1}
             stagger={0.05}
