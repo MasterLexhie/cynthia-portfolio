@@ -24,15 +24,17 @@ const HeroSection: React.FC = () => {
             as='h1'
             text='Product designer based in Lagos, Nigeria'
             className='text-white font-bold text-xl sm:text-[26px] lg:text-4xl'
-            delay={0.1}
+            delay={0.2}
             stagger={0.05}
+            mode='word'
           />
           <AnimatedCharacters
             as='p'
-            text='Open to full-time senior/mid-level roles in product design, remote or hybrid as well as freelance opportunities.'
+            text='Open to full-time senior/mid-level roles in product design, remote as well as freelance opportunities.'
             className='text-[#B5B5B5] font-bold text-base sm:text-xl lg:text-[22px] leading-[160%]'
             delay={0.1}
             stagger={0.05}
+            mode='word'
           />
           <p className='text-[#B5B5B5] font-normal text-[14px] sm:text-[18px] mb-[11px] leading-[160%]'>
             I’m a product designer with four years of experience crafting

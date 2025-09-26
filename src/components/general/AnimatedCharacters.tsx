@@ -103,7 +103,7 @@ export const AnimatedCharacters: React.FC<AnimatedCharactersProps> = ({
                   >
                     {word}
                   </m.span>
-                  {index < words.length - 1 && ' '}
+                  {index < words.length - 1 && '\u00A0'}
                 </span>
               ))}
         </m.span>
