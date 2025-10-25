@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
         <div className='flex flex-col gap-3.5 sm:gap-[22px] md:gap-8 mb-3.5 sm:mb-[22px] md:mb-8'>
           <AnimatedCharacters
             as='h1'
-            text='Product designer based in Lagos, Nigeria'
+            text='Senior Product Designer'
             className='text-white font-bold text-xl sm:text-[26px] lg:text-4xl'
             delay={0.2}
             stagger={0.05}
@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
           />
           <AnimatedCharacters
             as='p'
-            text='Open to full-time senior/mid-level roles in product design, remote as well as freelance opportunities.'
+            text='Open to full-time remote roles, as well as freelance opportunities.'
             className='text-[#B5B5B5] font-bold text-base sm:text-xl lg:text-[22px] leading-[160%]'
             delay={0.1}
             stagger={0.05}
@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
             variant='secondary'
             textColor='text-white'
             isLink={true}
-            linkUrl='https://docs.google.com/document/d/1JgUYR9qE-IclILxOALW2r0GJi4cA06UaFzjNcfQwdGM/mobilebasic?fbclid=PAQ0xDSwLzXtJleHRuA2FlbQIxMAABpwRDREckNsfT5kN4FgqSJv4a7-ASFCzw2exDDYgSfX97atFhB-rzi1dNrzzg_aem_jjqKMv-Q7u8AWDToz-8iWg'
+            linkUrl='https://docs.google.com/document/d/1JgUYR9qE-IclILxOALW2r0GJi4cA06UaFzjNcfQwdGM/edit?usp=drivesdk'
             target='_blank'
           />
         </div>
