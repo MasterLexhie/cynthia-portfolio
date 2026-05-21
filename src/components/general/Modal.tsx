@@ -108,13 +108,14 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
       aria-labelledby='modal-title'
     >
       <div
-        className={`overlay bg-[#D5D7DA40] absolute w-full h-full transform transition-transform duration-300 ease-out ${
+        className={`bg-[#D5D7DA40] absolute w-full h-full transform transition-transform duration-300 ease-out ${
           isAnimating ? 'translate-y-0' : 'translate-y-full'
         }`}
+        onClick={handleBackdropClick}
       ></div>
       <div
         ref={modalRef}
-        className={`w-full overflow-scroll pb-8 bg-[#191919] border-t border-[#242424] rounded-t-3xl transform transition-transform duration-300 ease-out ${
+        className={`w-full overflow-y-auto pb-8 bg-[#191919] border-t border-[#242424] rounded-t-3xl transform transition-transform duration-300 ease-out ${
           isAnimating ? 'translate-y-0' : 'translate-y-full'
         }`}
         style={{ maxHeight: '91vh', height: '91vh' }}
@@ -131,7 +132,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
               handleClick={onClose}
             />
           </div>
-          <div className='max-w-[840px] px-[22px] sm:px-[66px] mx-auto flex-1 overflow-y-auto focus:outline-none min-h-0 overscroll-contain'>
+          <div className='max-w-[840px] px-[22px] sm:px-[66px] mx-auto flex-1 focus:outline-none min-h-0'>
             {children}
           </div>
           <div className='max-w-[900px] w-full pt-[42px] lg:pt-[74px] mx-auto relative px-[22px]'>
