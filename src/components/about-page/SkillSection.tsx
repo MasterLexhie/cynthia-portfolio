@@ -13,6 +13,9 @@ const toolsData = [
   'Figma',
   'Lovableai',
   'ChatGPT',
+  'Claudeai',
+  'Cursor',
+  'Photoshop',
   'DeepSeek',
   'Notion',
   'Google Meet',
@@ -46,7 +49,8 @@ const getToolIconPath = (toolName: string): string => {
     .replace(/[^a-z0-9-]/g, '')
 
   const exceptions: Record<string, string> = {
-    lovableai: 'lovable'
+    lovableai: 'lovable',
+    claudeai: 'claude',
   }
 
   const fileBase = exceptions[normalized] ?? normalized
