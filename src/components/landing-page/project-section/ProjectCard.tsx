@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 const ProjectModal = dynamic(() => import('../../modals/ProjectModal'), {
   ssr: false
 })
-import { IProjectList } from '@/data/projects'
+import { IProjectList } from '@/types'
 
 interface IProjectCard {
   project: IProjectList

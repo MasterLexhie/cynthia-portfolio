@@ -1,43 +1,4 @@
-export interface IProjectList {
-  id: number
-  title: string
-  description: string
-  tags: string[]
-  imageSrc: string[]
-  projectType:
-    | 'case_study'
-    | 'live_site'
-    | 'live_soon'
-    | 'ui_design'
-    | 'post'
-    | 'illustration'
-  redirectLink?: string
-  role?: string[]
-  tools?: string[]
-  team?: string
-  website?: string
-  intro?: string
-  whatWeDeliver?: string[]
-  objectives?: {
-    primary?: string[]
-    secondary?: string[]
-    design?: Array<{
-      title?: string
-      description?: string
-    }>
-  }
-  myProcess?: Array<{
-    title?: string
-    description?: string
-    myProcessList?: string[]
-    detailsPoints?: string[]
-    painPoints?: string[]
-    proudOfList?: string[]
-    exploreList?: string[]
-    imageSrc?: string[]
-  }>
-  whatIsNext?: string
-}
+import {IProjectList} from "@/types";
 
 export const projectList: IProjectList[] = [
   {
@@ -253,7 +214,7 @@ export const projectList: IProjectList[] = [
     team: 'Cynthia Osi',
     intro: `Rather than overwhelm users with features, I chose to focus on mood, clarity, and quiet encouragement. Every detail from icon use to color mode was shaped around a single question: “How do we make saving feel more like a choice, and less like a chore?”`,
     objectives: {
-      design: [
+      designFeature: [
         {
           title: 'Light & Dark Mode',
           description:
@@ -302,7 +263,7 @@ export const projectList: IProjectList[] = [
       This screen was designed to solve that: to give users simple, meaningful control over how their books sound, not just what they say. By letting them choose the voice and adjust playback speed in one clear space, the experience becomes more personal, more comfortable and ultimately, more enjoyable.
     `,
     objectives: {
-      design: [
+      designFeature: [
         {
           title: 'Voice Selection',
           description:
@@ -361,7 +322,7 @@ export const projectList: IProjectList[] = [
     team: 'Cynthia Osi',
     intro: `Admins often juggle multiple users and varying access levels, which can get confusing fast. This screen was created to make role assignment and permission editing quick and intuitive. From creating new roles to tweaking access rights, everything happens in a few clicks, so admins can focus on what matters, not wrestling with settings.`,
     objectives: {
-      design: [
+      designFeature: [
         {
           title: 'Role Assignment',
           description:
@@ -404,7 +365,7 @@ export const projectList: IProjectList[] = [
     team: 'Cynthia Osi',
     intro: `Managing multiple projects can get overwhelming fast, especially when you’re juggling timelines, tasks, and team updates. This screen brings order to that chaos. It gives users a snapshot of all projects at a glance: total projects, what’s completed, and what’s still pending. With visual breakdowns and clean filters, users can quickly understand where things stand and where attention is needed`,
     objectives: {
-      design: [
+      designFeature: [
         {
           title: 'Data Visuals',
           description:
@@ -450,5 +411,203 @@ export const projectList: IProjectList[] = [
     tags: ['Illustration', 'Pen-tool', 'Sketching', 'Drawing'],
     imageSrc: ['/project-image-12.png'],
     projectType: 'illustration'
-  }
+  },
+  {
+    id: 13,
+    title: 'Vaults: Simplifying Cross-Chain Transfers in Web3',
+    description:
+      'A Web3 wallet concept designed to simplify how users move funds across blockchain networks.',
+    tags: ['UI Design', 'UX Design', 'Mobile App', 'Web3'],
+    imageSrc: [ '/project-image-13-a.webp' ],
+    projectType: 'case_study',
+    role: [
+      'Product Design',
+      'UI Design',
+      'UX Research',
+      'UX Design',
+      'Visual Design',
+      'Interaction Design',
+      'Interactive Prototype'
+    ],
+    tools: ['Figma', 'Figjam', 'Claude ai', 'ChatGpt prompt'],
+    team: 'Cynthia Osi',
+    intro:
+      'Web3 wallets have made it easier to store and manage digital assets but moving funds across networks remains one of the most confusing experiences for users. Concepts like networks, bridging, and gas fees are often introduced without context, leaving users unsure of what\u2019s happening to their money.\n\nThis project explores how better UX can simplify cross-chain transactions by making systems more visible, language more human, and flows easier to follow.',
+    objectives: {
+      primary: [
+        'Design a clear and intuitive experience for moving funds across blockchain networks.'
+      ],
+      secondary: [
+        'Reduce confusion between tokens and networks.',
+        'Improve user confidence during transactions.',
+        'Replace technical jargon with simple, human language.',
+        'Provide transparency into fees and transaction steps.'
+      ],
+      designApproach: {
+        intro:
+          'Based on these insights, I shifted the focus from adding features to improving clarity making the system easier to understand before asking users to act.\n\nThis led to the core design principles used:',
+        principles: [
+          {
+            title: '1. Make the system visible',
+            description: 'Help users understand where they are and where their funds are going.',
+            introSentence: 'Instead of hiding network states, the design introduces:',
+            bullets: [
+              'A clear current network indicator',
+              'A visible destination network before transactions begin'
+            ],
+            image: '/project-image-13-approach-a.webp'
+          },
+          {
+            title: '2. Separate decisions from actions',
+            description: 'Reduce cognitive load by structuring the flow step-by-step.',
+            introSentence: 'Rather than combining everything in one screen:',
+            bullets: [
+              'Users first choose the network',
+              'Then enter transaction details'
+            ],
+            image: '/project-image-13-approach-b.webp',
+          },
+          {
+            title: '3. Use human language',
+            description: 'Replace technical terms with familiar, action-based language.',
+            introSentence: 'Instead of expecting users to understand Web3 terminology:',
+            bullets: [
+              '\u201cBridge\u201d becomes \u201cMove Funds\u201d',
+              '\u201cTransaction output\u201d becomes \u201cYou\u2019ll receive\u201d'
+            ],
+            image: '/project-image-13-approach-c.webp',
+            outroSentence: 'This makes actions immediately understandable without prior knowledge.'
+          },
+          {
+            title: '4. Provide clear feedback during and after transactions',
+            description: 'Reduce uncertainty by showing what\u2019s happening and confirming outcomes.',
+            introSentence: 'Instead of relying on generic loading states, the design introduces:',
+            bullets: [
+              'A step-based progress system (e.g. sending \u2192 processing \u2192 receiving)',
+              'Clear messaging that sets expectations (\u201cThis may take a few minutes\u201d)',
+              'A reassuring success state that confirms completion and location of funds'
+            ],
+            image: '/project-image-13-approach-d.webp',
+            outroSentence: 'This makes actions immediately understandable without prior knowledge.'
+          }
+        ]
+      },
+    },
+    whatIsNext:
+      'While this project focused on simplifying the transfer flow, future iterations would explore transaction tracking, asset recovery support, and educational prompts that help users better understand cross-chain activity and make more informed decisions.\n'
+  },
+  {
+    id: 14,
+    title: 'Designing DeFi Lending for Everyday Users',
+    description:
+      'This project explores how decentralized finance (DeFi) lending can be made more understandable for everyday users.',
+    tags: ['UI Design', 'UX Design', 'Mobile App', 'Web3'],
+    imageSrc: [
+      '/project-image-14-a.webp'
+    ],
+    projectType: 'case_study',
+    role: [
+      'Product Design',
+      'UI Design',
+      'UX Research',
+      'UX Design',
+      'Visual Design',
+      'Interaction Design',
+      'Interactive Prototype',
+    ],
+    tools: ['Figma', 'Figjam', 'Google doc', 'Claude ai', 'ChatGpt prompt'],
+    team: 'Cynthia Osi',
+    intro:
+      'Decentralized finance makes it possible to borrow against crypto without relying on traditional banks. But while the system is powerful, the experience often isn\'t. Most lending platforms are designed for users who already understand DeFi, leaving others unsure of what\'s happening and what risks they\'re taking.\n\nThis project explores how borrowing can be redesigned to feel clearer, more guided, and more trustworthy.',
+    objectives: {
+      primary: [
+        'Design a borrowing experience that helps users understand risk, make informed decisions, and confidently borrow against their crypto assets without requiring advanced DeFi knowledge.',
+      ],
+      secondary: [
+        'Improve users\' understanding of key DeFi concepts such as collateral, liquidation, and health factor.',
+        'Make borrowing risks visible and easier to interpret through clear visual feedback.',
+        'Simplify the borrowing journey by separating complex actions into manageable steps.',
+        'Increase transparency around loan terms, collateral requirements, and borrowing outcomes.',
+        'Create a more reassuring transaction experience through clear progress and confirmation states.',
+      ],
+      designApproach: {
+        intro:
+          'Based on these insights, I shifted the focus from adding features to improving clarity making the system easier to understand before asking users to act.\n\nThis led to the core design principles used:',
+        principles: [
+          {
+            title: '1. Borrow Dashboard',
+            description: 'Problem: Users don\'t know their current position.',
+            introSentence: 'Solution: The dashboard highlights:',
+            bullets: [
+              'Total collateral',
+              'Borrowed amount',
+              'Risk status',
+            ],
+            image: '/project-image-14-approach-a.webp',
+            outroSentence: 'Result: Users can immediately understand whether they are in a safe position to borrow.',
+          },
+          {
+            title: '2. Select Collateral',
+            description: 'Problem: Collateral feels abstract.',
+            introSentence: 'Solution: Clear asset selection with supporting context:',
+            bullets: [
+              '"This will be used as security for your loan"',
+            ],
+            image: '/project-image-14-approach-b.webp',
+            outroSentence: 'Result: Users understand what they are committing before proceeding.',
+          },
+          {
+            title: '3. Borrow Input',
+            description: 'Problem: Users don\'t know how much is safe to borrow.',
+            introSentence: 'Solution:',
+            bullets: [
+              'Real-time slider',
+              'Visual risk meter',
+              'Clear feedback ("You\'re in a safe range")',
+            ],
+            image: '/project-image-14-approach-c.webp',
+            outroSentence: 'Result: Users can make informed decisions instead of guessing.',
+          },
+          {
+            title: '4. Risk Explanation',
+            description: 'Problem: Key concepts are unclear.',
+            introSentence: 'Solution: Simple, contextual explanations:',
+            bullets: [
+              'Collateral',
+              'Loan',
+              'Liquidation',
+            ],
+            image: '/project-image-14-approach-d.webp',
+            outroSentence: 'Result: Users gain understanding without being overwhelmed.',
+          },
+          {
+            title: '5. Summary & Confirmation',
+            description: 'Problem: Users commit without full clarity.',
+            introSentence: 'Solution: Clear breakdown:',
+            bullets: [
+              'What you deposit',
+              'What you borrow',
+              'Risk level',
+            ],
+            image: '/project-image-14-approach-e.webp',
+            outroSentence: 'Result: Users confirm with confidence, not uncertainty.',
+          },
+          {
+            title: '6. Processing & Feedback',
+            description: 'Problem: Transactions feel like a black box.',
+            introSentence: 'Solution: Step-based progress:',
+            bullets: [
+              'Locking collateral',
+              'Creating loan',
+              'Funds arriving',
+            ],
+            image: '/project-image-14-approach-f.webp',
+            outroSentence: 'Result: Users feel informed during waiting periods.',
+          },
+        ],
+      },
+    },
+    whatIsNext:
+      'Future iterations would focus on helping users manage their loans beyond the initial borrowing flow through risk simulations, proactive alerts, and personalized guidance that make complex financial decisions easier to understand and act on.\n',
+  },
 ]

@@ -24,6 +24,19 @@ export const workExperiences: WorkExperience[] = [
     ]
   },
   {
+    id: '390_tech',
+    company: '390 Technologies',
+    location: 'Lagos, Nigeria',
+    position: 'Product Designer',
+    duration: 'Dec 2025 - Present',
+    responsibilities: [
+      'Restructured the customer-facing Hub, consolidating products, services, blog content, and business information into a coherent, navigable experience reducing user drop-off significantly.',
+      'Built a step-by-step execution sequence system that guides businesses through complex workflows in a structured, trackable way.',
+      'Defined and implemented a refined visual design language with a structured, industrial aesthetic, improving UI consistency across the hub and all execution flows.',
+      'Worked closely with developers to ensure smooth implementation and maintained consistency across different parts of the product by 20%.'
+    ]
+  },
+  {
     id: 'tobinrin',
     company: 'Tobinrin',
     location: 'Lagos, Nigeria',

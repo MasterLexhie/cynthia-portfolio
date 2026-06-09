@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
         <div className='flex flex-col gap-3.5 sm:gap-[22px] md:gap-8 mb-3.5 sm:mb-[22px] md:mb-8'>
           <AnimatedCharacters
             as='h1'
-            text='Senior Product Designer'
+            text='Designing thoughtful digital products across SaaS, AI, fintech, and Web3.'
             className='text-white font-bold text-xl sm:text-[26px] lg:text-4xl'
             delay={0.2}
             stagger={0.05}
@@ -37,10 +37,7 @@ const HeroSection: React.FC = () => {
             mode='word'
           />
           <p className='text-[#B5B5B5] font-normal text-[14px] sm:text-[18px] mb-[11px] leading-[160%]'>
-            I’m a product designer with four years of experience crafting
-            user-centered digital experiences. I also illustrate, which adds
-            visual storytelling to my work. I also bring designs to life through
-            vibe code turning Figma files into expressive websites with Lovable.
+            I’m a product designer with 5+ years of experience working with startups and operational platforms, focused on simplifying complex workflows and building intuitive user experiences. I combine design, illustration, and vibe coding to turn Figma ideas into expressive, interactive websites with Lovable.
           </p>
         </div>
         <div className='flex gap-3'>
