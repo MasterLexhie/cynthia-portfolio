@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Modal from '@/components/general/Modal'
 import ProjectTag from '@/components/landing-page/project-section/ProjectTag'
-import { IProjectList } from '@/data/projects'
+import { IProjectList } from '@/types'
 
 interface ProjectModalProps {
   isOpen: boolean
@@ -236,19 +236,93 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 </div>
               )}
 
-            {project.objectives.design &&
-              project.objectives.design.length > 0 && (
+            {project.objectives.designApproach && (
+              <div className='flex flex-col gap-3.5 sm:gap-[22px] mt-[40px]'>
+                <div>
+                  <h4 className='text-white font-bold text-xl sm:text-[22px] mb-[12px]'>
+                    My Design Approach
+                  </h4>
+                  <p className='text-[#B5B5B5] text-sm sm:text-lg leading-[160%]'>
+                    {project.objectives.designApproach.intro}
+                  </p>
+                </div>
+
+                {project.objectives.designApproach.principles.map((item, index) => (
+                  <div key={index} className='flex flex-col gap-3'>
+                    {item.title && (
+                      <h5 className='text-white font-bold text-base sm:text-xl leading-[120%]'>
+                        {`${item.title}`}
+                      </h5>
+                    )}
+                    <div className="flex flex-col gap-6 mb-[22px]">
+                      {item.description && (
+                        <p className='text-[#B5B5B5] text-sm sm:text-lg leading-[160%]'>
+                          {item.description}
+                        </p>
+                      )}
+                      <div>
+                        {item.introSentence && (
+                          <p className='text-[#B5B5B5] text-sm sm:text-lg'>
+                            {item.introSentence}
+                          </p>
+                        )}
+                        {item.bullets && (
+                          <>
+                            {item.bullets.length === 1 ? (
+                              <p className='text-[#B5B5B5] text-sm sm:text-lg mt-6 mb-3'>
+                                {item.bullets[0]}
+                              </p>
+                            ) : (
+                              <ul className='list-disc pl-4'>
+                                {item.bullets.map((item, index) => (
+                                  <li
+                                    key={index}
+                                    className='text-[#B5B5B5] text-sm sm:text-lg leading-[160%]'
+                                  >
+                                    {item}
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </>
+                        )}
+                      </div>
+                      {item.outroSentence && (
+                        <p className='text-[#B5B5B5] text-sm sm:text-lg leading-[160%]'>
+                          {item.outroSentence}
+                        </p>
+                      )}
+                    </div>
+                    {item.image && (
+                      <div className='rounded-[8px] overflow-hidden max-h-[711px]'>
+                        <Image
+                          src={`/images/project-images${item.image}`}
+                          alt={`${project.title} project image`}
+                          width={300}
+                          height={200}
+                          className='w-full h-auto'
+                          sizes='(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 840px'
+                        />
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {project.objectives.designFeature &&
+              project.objectives.designFeature.length > 0 && (
                 <div className='flex flex-col gap-3.5 sm:gap-[22px]'>
-                  {project.objectives.design.map((design, index) => (
+                  {project.objectives.designFeature.map((item, index) => (
                     <div key={index} className='flex flex-col gap-3'>
-                      {design.title && (
+                      {item.title && (
                         <h5 className='text-white font-bold text-base sm:text-xl leading-[120%]'>
-                          {`${index + 1}. ${design.title}`}
+                          {`${index + 1}. ${item.title}`}
                         </h5>
                       )}
-                      {design.description && (
+                      {item.description && (
                         <p className='text-[#B5B5B5] text-sm sm:text-lg leading-[160%]'>
-                          {design.description}
+                          {item.description}
                         </p>
                       )}
                     </div>

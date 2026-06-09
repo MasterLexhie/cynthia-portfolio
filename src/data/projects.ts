@@ -418,13 +418,7 @@ export const projectList: IProjectList[] = [
     description:
       'A Web3 wallet concept designed to simplify how users move funds across blockchain networks.',
     tags: ['UI Design', 'UX Design', 'Mobile App', 'Web3'],
-    imageSrc: [
-      '/project-image-13-a.webp',
-      '/project-image-13-b.webp',
-      '/project-image-13-c.webp',
-      '/project-image-13-d.webp',
-      '/project-image-13-e.webp'
-    ],
+    imageSrc: [ '/project-image-13-a.webp' ],
     projectType: 'case_study',
     role: [
       'Product Design',
@@ -460,7 +454,8 @@ export const projectList: IProjectList[] = [
             bullets: [
               'A clear current network indicator',
               'A visible destination network before transactions begin'
-            ]
+            ],
+            image: '/project-image-13-approach-a.webp'
           },
           {
             title: '2. Separate decisions from actions',
@@ -469,7 +464,8 @@ export const projectList: IProjectList[] = [
             bullets: [
               'Users first choose the network',
               'Then enter transaction details'
-            ]
+            ],
+            image: '/project-image-13-approach-b.webp',
           },
           {
             title: '3. Use human language',
@@ -479,6 +475,7 @@ export const projectList: IProjectList[] = [
               '\u201cBridge\u201d becomes \u201cMove Funds\u201d',
               '\u201cTransaction output\u201d becomes \u201cYou\u2019ll receive\u201d'
             ],
+            image: '/project-image-13-approach-c.webp',
             outroSentence: 'This makes actions immediately understandable without prior knowledge.'
           },
           {
@@ -490,6 +487,7 @@ export const projectList: IProjectList[] = [
               'Clear messaging that sets expectations (\u201cThis may take a few minutes\u201d)',
               'A reassuring success state that confirms completion and location of funds'
             ],
+            image: '/project-image-13-approach-d.webp',
             outroSentence: 'This makes actions immediately understandable without prior knowledge.'
           }
         ]
@@ -505,12 +503,7 @@ export const projectList: IProjectList[] = [
       'This project explores how decentralized finance (DeFi) lending can be made more understandable for everyday users.',
     tags: ['UI Design', 'UX Design', 'Mobile App', 'Web3'],
     imageSrc: [
-      '/project-image-14-a.webp',
-      '/project-image-14-b.webp',
-      '/project-image-14-c.webp',
-      '/project-image-14-d.webp',
-      '/project-image-14-e.webp',
-      '/project-image-14-f.webp',
+      '/project-image-14-a.webp'
     ],
     projectType: 'case_study',
     role: [
@@ -550,6 +543,7 @@ export const projectList: IProjectList[] = [
               'Borrowed amount',
               'Risk status',
             ],
+            image: '/project-image-14-approach-a.webp',
             outroSentence: 'Result: Users can immediately understand whether they are in a safe position to borrow.',
           },
           {
@@ -559,6 +553,7 @@ export const projectList: IProjectList[] = [
             bullets: [
               '"This will be used as security for your loan"',
             ],
+            image: '/project-image-14-approach-b.webp',
             outroSentence: 'Result: Users understand what they are committing before proceeding.',
           },
           {
@@ -570,6 +565,7 @@ export const projectList: IProjectList[] = [
               'Visual risk meter',
               'Clear feedback ("You\'re in a safe range")',
             ],
+            image: '/project-image-14-approach-c.webp',
             outroSentence: 'Result: Users can make informed decisions instead of guessing.',
           },
           {
@@ -581,6 +577,7 @@ export const projectList: IProjectList[] = [
               'Loan',
               'Liquidation',
             ],
+            image: '/project-image-14-approach-d.webp',
             outroSentence: 'Result: Users gain understanding without being overwhelmed.',
           },
           {
@@ -592,6 +589,7 @@ export const projectList: IProjectList[] = [
               'What you borrow',
               'Risk level',
             ],
+            image: '/project-image-14-approach-e.webp',
             outroSentence: 'Result: Users confirm with confidence, not uncertainty.',
           },
           {
@@ -603,6 +601,7 @@ export const projectList: IProjectList[] = [
               'Creating loan',
               'Funds arriving',
             ],
+            image: '/project-image-14-approach-f.webp',
             outroSentence: 'Result: Users feel informed during waiting periods.',
           },
         ],
