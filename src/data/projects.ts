@@ -499,7 +499,8 @@ export const projectList: IProjectList[] = [
       'A game website hero section with smooth hover effects, immersive design, and that satisfying endless scroll that keeps you going without even realizing it.',
     tags: ['UI Design', 'UX Design', 'Landing Page'],
     imageSrc: ['/project-image-8.webp'],
-    projectType: 'live_soon'
+    projectType: 'live_site',
+    redirectLink: 'https://lootdrop.lovable.app/'
   },
   {
     id: 9,
